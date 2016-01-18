@@ -1,0 +1,10 @@
+Directory: admin
+id:admin
+password:admin
+
+jika ada error pada bagian validasi email dan nomor telp 
+
+bagian eregi 
+ubah menjadi preg_macth 
+dan di bagian filter kondisi tambahkan / pada awal dan akhir
+untuk mas margono mohon tempelate adminnya di rapikan 

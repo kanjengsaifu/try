@@ -1,0 +1,76 @@
+<?php 
+@$page=$_GET['redirect'];
+switch($page){
+	case'barang':
+		include"./page/data_barang.php";
+	break;
+		case'order':
+	include"./page/data_pemesanan.php";
+	break;
+	case'transaksi':
+		include"./page/data_transaksi.php";
+	break;
+	case'data_member':
+		include"./page/data_member.php";
+	break;
+	case'add_barang':
+		include"./page/tambah_barang.php";
+	break;
+	case'kategori':
+		include"./page/data_kategori.php";
+	break;
+	case'edit_barang':
+		include"./page/edit_barang.php";
+	break;
+	case'img_p':
+		include"./page/img_produk.php";
+	break;
+	case'edit_ktg':
+		include"./page/edit_kategori.php";
+	break;
+	case'del_order':
+		del_order($_GET);
+	break;
+	case'detail_order':
+		include"./page/order_detail.php";
+	break;
+	
+	case'order_proses':
+		include"./page/order_proses.php";
+	break;
+	
+	case'detail_pesan':
+		include"./page/detail_pesan.php";
+	break;
+	case'order_batal':
+		include"./page/batal_pesan.php";
+	break;
+		case'pembayaran':
+	include"./page/data_pembayaran.php";
+	break;
+		case'pesan_konfirmasi':
+	include"./page/pesan_konfirmasi.php";
+	break;
+	case'edit_admin':
+	include"./page/edit_admin.php";
+	break;
+	case'rekrut_admin':
+	include"./page/rekrut_admin.php";
+	break;
+	case'ubah_password':
+	include"./page/ubah_password.php";
+	break;
+	case'foto_admin':
+		include"./page/upload_foto_admin.php";
+	break;
+	case'data_member':
+		include"./page/data_member.php";
+	break;
+	case'detail_member':
+		include"./page/detail_member.php";
+	break;
+default:
+	include"./page/home.php";
+break;
+}
+?>

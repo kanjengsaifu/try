@@ -1,0 +1,9 @@
+<?php 
+include"./function/function.php";
+cek_session();
+include"../config/koneksi.php";
+include"./theme/head.php";
+include"./theme/nav.php";
+include"get_content.php";
+include"./theme/footer.php";
+?>	
